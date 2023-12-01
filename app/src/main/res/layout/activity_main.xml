@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <!-- TextView for mobile time -->
+        <TextView
+            android:id="@+id/mobileTimeTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mobile Time: "
+            android:textSize="20sp" />
+
+        <!-- TextView for NTP time -->
+        <TextView
+            android:id="@+id/ntpTimeTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mobileTimeTextView"
+            android:layout_marginTop="16dp"
+            android:text="NTP Time: "
+            android:textSize="20sp" />
+
+        <!-- TextView for time difference -->
+        <TextView
+            android:id="@+id/timeDifferenceTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ntpTimeTextView"
+            android:layout_marginTop="16dp"
+            android:text="Time Difference: "
+            android:textSize="20sp" />
+
+        <!-- Button to sync time -->
+        <Button
+            android:id="@+id/syncButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sync Time"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="16dp" />
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
